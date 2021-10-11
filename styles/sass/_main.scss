@@ -1,0 +1,104 @@
+@use 'fonts';
+$main-txt-color: #111111;
+$main-current-color: #7e7e7e;
+
+body {
+    font-family: fonts.$main-font;
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 81%;
+    width: 100%;
+    margin: auto;
+}
+
+.current {
+    color: $main-current-color;
+}
+
+p {
+    font-family: fonts.$main-font;
+    color: $main-txt-color;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    margin: 0%;
+}
+
+.p-title {
+    line-height: 20px;
+    opacity: 1;
+    margin: 0%;
+}
+
+.quote__p {
+    font-style: italic;
+    font-size: 18px;
+    line-height: 23px;
+    padding-top: 3%;
+}
+
+.li-list {
+    font-size: 18px;
+    line-height: 23px;
+}
+/*Can't get the @extend to work*/
+
+
+h1 {
+    font-family: fonts.$main-font;
+    color: $main-txt-color;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 0%;
+}
+
+.h1-intro {
+    color: #4A4FF2;
+}
+
+h2 {
+    font-family: fonts.$main-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.423077px;
+    color: #4A4FF2;
+    margin: 0%;
+}
+
+h3 {
+    font-family: fonts.$main-font;
+    color: $main-txt-color;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+}
+
+h4 {
+    font-family: fonts.$main-font;
+    color: $main-txt-color;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    margin: 0%;
+}

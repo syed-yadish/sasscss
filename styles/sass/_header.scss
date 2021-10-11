@@ -1,0 +1,96 @@
+@use 'fonts';
+@use 'main';
+
+header {
+  max-width: 81%;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  align-items: center;
+
+  &_name {
+    display: flex;
+  }
+
+  &_nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 2em;
+  }
+}
+
+li a {
+  font-family: fonts.$main-font;
+  color: main.$main-txt-color;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.346154px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.top {
+  transition: transform 0.2s;
+  margin: 0 auto;
+}
+
+.top:hover {
+  transform: scale(1.2);
+}
+
+.head-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 3%;
+  padding-bottom: 4%;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  max-width: 57%;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  max-width: 35%;
+  width: 100%;
+  justify-content: end;
+  align-content: end;
+}
+
+.side-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: start;
+  max-width: 60%;
+  width: 100%;
+}
+
+.side_line {
+  display: flex;
+  width: 30px;
+  height: 2px;
+  background: main.$main-txt-color;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
